@@ -9,9 +9,35 @@ export class TodoListComponent implements OnInit {
 
   todoList: Todo[] = [];
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor() {
+    // Array of data added 
+      this.todoList = [
+        {
+          task: 'Do Dishes',
+          completed: false,
+        },
+        {
+          task: 'Start Laundry',
+          completed: false,
+        },
+        {
+          task: ' Floor Cleaning',
+          completed: false,
+        },
+        {
+          task: 'Do Vacuum',
+          completed: false,
+        },
+      ];
   }
+
+  ngOnInit(): void {}
+
+
+
+
+
+
 
 }
